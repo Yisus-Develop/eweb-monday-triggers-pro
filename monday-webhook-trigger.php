@@ -2,7 +2,7 @@
 /**
  * Plugin Name: EWEB Monday Triggers Pro
  * Description: High-performance webhook trigger engine for Monday.com. Synchronize WordPress events with your boards in real-time. Part of the EWEB Plugin Suite.
- * Version: 1.0.0
+ * Version: 1.1.2
  * Author: Yisus Develop
  * Requires PHP:      8.1
  */
