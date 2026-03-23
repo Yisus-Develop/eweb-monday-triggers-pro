@@ -71,6 +71,12 @@ if ( ! class_exists( "EWEB_GitHub_Updater" ) ) {
 			$res->author = $local_data["Author"];
 			$res->homepage = $local_data["PluginURI"];
 			$res->download_link = $remote->zipball_url;
+			$res->banners = ["low" => "https://raw.githubusercontent.com/Yisus-Develop/eweb-starter-helper/main/assets/banner.png", "high" => "https://raw.githubusercontent.com/Yisus-Develop/eweb-starter-helper/main/assets/banner.png"]; $res->icons = ["1x" => "https://raw.githubusercontent.com/Yisus-Develop/eweb-starter-helper/main/assets/icon.png", "2x" => "https://raw.githubusercontent.com/Yisus-Develop/eweb-starter-helper/main/assets/icon.png"]; 
+			$res->sections = [
+				"description"  => "High-fidelity professional plugin developed by **Yisus Develop**. Part of the EWEB Plugin Suite, optimized for performance and security.",
+				"installation" => "1. Upload the plugin folder to /wp-content/plugins/\n2. Activate the plugin through the Plugins menu in WordPress.",
+				"changelog"    => "v" . $res->version . " - Official stable release and visual identity update.",
+			];
 			$res->sections = [
 				"description" => $local_data["Description"],
 				"changelog"   => $remote->body ?? "New version available via GitHub.",
